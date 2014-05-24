@@ -23,5 +23,16 @@ $finval = [];//final values
 info, datextraction()
     //return format id,votes(sum),pledge 
 */
-        
+$c=0;
+$link = mysqli_connect("localhost", "root", "1", "posts");
+while (mysqli_connect_errno()==true && $c<5){
+        $mysqli = mysqli_connect("localhost", "root", "1", "post_data");
+        if ($c==5){
+          printf("Connect failed: %s\n", mysqli_connect_error());
+    exit();
+        }
+        $c++;
+}
+$data = mysqli_query($link, "SELECT * FROM post_data WHERE `date` > timestampadd(day, -7, now());")
+echo $data;
 ?> 
