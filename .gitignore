@@ -1,5 +1,5 @@
 dir_to_ignore/.metadata
-*/.metadata/*
+*/.metadata/*#unnecesary
 /appthings/[ython/.metadata/*
 dir_to_ignore/appthings/python/.metadata
 dir_to_ignore/The-engine-/appthings/python/.metadata
